@@ -1,0 +1,10 @@
+apiVersion: v2
+description: Helm Chart for sample-app
+type: application
+version: 0.1.0
+
+name: nginx-ha-app-helm-chart
+dependencies:
+  - name: nginx-ha-app-helm-chart
+    version: "0.1.1"
+    repository: "http://nexus-artifactory/repository/helm-templates"
