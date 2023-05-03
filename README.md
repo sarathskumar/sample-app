@@ -6,6 +6,7 @@ Repository for creating infrastructure using terraform with terragrunt as a wrap
    # Pre-requisite
 
    Install terraform latest verison
+   
    Install terragrunt
 
    # Service account key creation in GCP for creating these resources. Give only minimal permission for creating these resources
