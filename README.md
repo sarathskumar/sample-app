@@ -24,53 +24,53 @@ Repository for creating infrastructure using terraform with terragrunt as a wrap
 
    # Directory-structure
 
-└── gcp
-    ├── non-prod
-    │   ├── app-layer
-    │   │   ├── bastion-host
-    │   │   │   └── terragrunt.hcl
-    │   │   └── gke-applayer
-    │   │       └── terragrunt.hcl
-    │   ├── data-layer
-    │   │   └── cloud-sql
-    │   ├── network-layer
-    │   │   ├── address
-    │   │   │   └── terragrunt.hcl
-    │   │   ├── nat
-    │   │   │   └── terragrunt.hcl
-    │   │   ├── router
-    │   │   │   └── terragrunt.hcl
-    │   │   ├── subnets
-    │   │   │   ├── subnet1-app
-    │   │   │   │   └── terragrunt.hcl
-    │   │   │   └── subnet2-data
-    │   │   │       └── terragrunt.hcl
-    │   │   └── vpc
-    │   │       └── terragrunt.hcl
-    │   └── terragrunt.hcl
-    ├── prod
-    │   ├── app-layer
-    │   │   ├── bastion-host
-    │   │   │   └── terragrunt.hcl
-    │   │   └── gke-applayer
-    │   │       └── terragrunt.hcl
-    │   ├── data-layer
-    │   │   └── cloud-sql
-    │   └── network-layer
-    │       ├── address
-    │       │   └── terragrunt.hcl
-    │       ├── nat
-    │       │   └── terragrunt.hcl
-    │       ├── router
-    │       │   └── terragrunt.hcl
-    │       ├── subnets
-    │       │   ├── subnet1-app
-    │       │   │   └── terragrunt.hcl
-    │       │   └── subnet2-data
-    │       │       └── terragrunt.hcl
-    │       └── vpc
-    │           └── terragrunt.hcl
-    └── terragrunt.hcl
+   └── gcp
+       ├── non-prod
+       │   ├── app-layer
+       │   │   ├── bastion-host
+       │   │   │   └── terragrunt.hcl
+       │   │   └── gke-applayer
+       │   │       └── terragrunt.hcl
+       │   ├── data-layer
+       │   │   └── cloud-sql
+       │   ├── network-layer
+       │   │   ├── address
+       │   │   │   └── terragrunt.hcl
+       │   │   ├── nat
+       │   │   │   └── terragrunt.hcl
+       │   │   ├── router
+       │   │   │   └── terragrunt.hcl
+       │   │   ├── subnets
+       │   │   │   ├── subnet1-app
+       │   │   │   │   └── terragrunt.hcl
+       │   │   │   └── subnet2-data
+       │   │   │       └── terragrunt.hcl
+       │   │   └── vpc
+       │   │       └── terragrunt.hcl
+       │   └── terragrunt.hcl
+       ├── prod
+       │   ├── app-layer
+       │   │   ├── bastion-host
+       │   │   │   └── terragrunt.hcl
+       │   │   └── gke-applayer
+       │   │       └── terragrunt.hcl
+       │   ├── data-layer
+       │   │   └── cloud-sql
+       │   └── network-layer
+       │       ├── address
+       │       │   └── terragrunt.hcl
+       │       ├── nat
+       │       │   └── terragrunt.hcl
+       │       ├── router
+       │       │   └── terragrunt.hcl
+       │       ├── subnets
+       │       │   ├── subnet1-app
+       │       │   │   └── terragrunt.hcl
+       │       │   └── subnet2-data
+       │       │       └── terragrunt.hcl
+       │       └── vpc
+       │           └── terragrunt.hcl
+       └── terragrunt.hcl
 
 Here i am using terraform modules for creating each resources so i can reuse it for different enviornment like non-prod, prod etc. 
 
